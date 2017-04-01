@@ -1,0 +1,85 @@
+body {
+  background: linear-gradient(75deg, #fafafa, #f9f6c0);
+  background-attachment: scroll; }
+
+header {
+  margin-bottom: 6em; }
+  header .menu {
+    position: fixed;
+    top: 0;
+    right: 0; }
+    header .menu div {
+      display: inline-block;
+      border: 3px solid rgba(0, 0, 0, 0.3);
+      margin: 0.5em;
+      padding: 0.7em 1.1em; }
+
+main .about-me {
+  background-color: #faae33;
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.4);
+  min-height: 70vh; }
+main .projects {
+  margin-top: 12em;
+  background-color: white;
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.4);
+  min-height: 70vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  main .projects .project {
+    min-height: 315px;
+    min-width: 250px;
+    margin: 6%;
+    background-color: #fafafa;
+    background: linear-gradient(75deg, #fafafa, #f9f6c0);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4); }
+    main .projects .project > img {
+      transition: all 0.5s ease-in-out;
+      opacity: 1; }
+    main .projects .project .about-project {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      background-color: transparent;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      text-align: center;
+      transform: scale(0);
+      transition: all 0.5s ease-in-out; }
+      main .projects .project .about-project h2 {
+        color: #ff1444;
+        text-transform: uppercase;
+        border-bottom: 1px dotted black;
+        padding: 2em 0;
+        margin: 1em 2em; }
+      main .projects .project .about-project p {
+        color: #333333;
+        padding: 1em 2em; }
+      main .projects .project .about-project a {
+        color: darkmagenta;
+        padding: 1em 2em; }
+    main .projects .project:hover img {
+      transform: scale(10);
+      opacity: 0; }
+    main .projects .project:hover .about-project {
+      opacity: 1;
+      transform: scale(1); }
+main .contact {
+  margin-top: 12em;
+  background-color: blue;
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.4);
+  min-height: 70vh; }
+
+footer {
+  margin-top: 12em;
+  background-color: green;
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.4); }
+
+/*# sourceMappingURL=basic-styles.css.map */
